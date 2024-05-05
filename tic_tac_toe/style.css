@@ -1,7 +1,7 @@
 .bg{
     background-color: blue;
-    height: 500px;
-    width: 500px;
+    height: 400px;
+    width: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,8 +29,36 @@ body{
     background-color: white;
     margin: 10px;
     text-align: center;
+    font-size: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #xo11, #xo12, #xo13, #xo21, #xo22, #xo23, #xo31, #xo32, #xo33{
     opacity: 0%;
+    /* font-size: 10px; */
+}
+p{
+    text-align: center;
+    /* font-size: 10px; */
+}
+.increaseOpacity{
+    opacity: 100%;
+}
+.computer, .twoPlayer{
+    background-color: orangered;
+    color: white;
+    margin: 15px;
+    /* height: 30px; */
+    font-size: 20px;
+    border: 2px black;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.winner{
+    background-color: lightgray;
+    color: orangered;
 }
