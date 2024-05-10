@@ -1,5 +1,6 @@
 .bg{
-    background-color: blue;
+    /* background-color: blue; */
+    background: linear-gradient(blue, purple);
     height: 400px;
     width: 400px;
     display: flex;
@@ -11,6 +12,8 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    /* background-color: black; */
+    background: linear-gradient(30deg, black, grey);
 }
 .row1, .row2, .row3{
     display: flex;
@@ -34,6 +37,7 @@ body{
     align-items: center;
     justify-content: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
 }
 
 #xo11, #xo12, #xo13, #xo21, #xo22, #xo23, #xo31, #xo32, #xo33{
@@ -53,12 +57,21 @@ p{
     margin: 15px;
     /* height: 30px; */
     font-size: 20px;
-    border: 2px black;
+    border: 2px solid white;
     border-radius: 10px;
     padding: 5px;
+}
+.twoPlayer{
+    background-color: orange;
+    color: black;
 }
 
 .winner{
     background-color: lightgray;
     color: orangered;
+}
+
+.footer{
+    font-size: 40px;
+    /* border: 2px solid black; */
 }
