@@ -4,6 +4,7 @@
 }
 body{
     background-color: black;
+    overflow: hidden;
 }
 .container{
     /* background-color: blue; */
@@ -18,9 +19,74 @@ body{
     background-image: url(trex-unscreen.gif);
     background-repeat: no-repeat;
     background-size: 20vw 40vh;
+    /* background-size: cover; image coveres the div size */
     width: 100%;
     height: 40vh;
     position: absolute;
     bottom: 0;
     left: 30%;
+}
+
+.villain{
+    background-image: url(villain-dino-flip.gif);
+    background-repeat: no-repeat;
+    background-size: 15vw 25vh;
+    width: 100%;
+    height: 25vh;
+    position: absolute;
+    bottom: 2%;
+    left: 60%;
+    
+}
+
+.animateVillain{
+    animation: myvillian 2.5s linear infinite;
+}
+
+@keyframes myvillian{
+    0%{
+        left: 100vw;
+    }
+    100%{
+        left:-10vw;
+    }
+}
+
+.animateDino{
+    animation: mydino 0.9s linear;
+}
+
+@keyframes mydino{
+    0%{
+        bottom: 0;
+    }
+
+    50%{
+        bottom: 40%;
+    }
+
+    100%{
+        bottom: 0;
+    }
+}
+
+.scoreCount{
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+}
+
+.gameOver{
+    /* color: black; */
+    color: white;
+    position: absolute;
+    top: 55%;
+    left: 40%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    visibility: hidden;
+    background-color: black;
 }
