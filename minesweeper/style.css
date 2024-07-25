@@ -1,0 +1,68 @@
+body{
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+#mines-count{
+    margin: 5px;
+}
+#board{
+    height: 400px;
+    width: 400px;
+    background-color: whitesmoke;
+    margin: 5px auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    border: 10px solid rgb(163, 157, 157);
+}
+
+#board div{
+    height: 48px;
+    width: 48px;
+    margin: 1px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+}
+
+#flag{
+    font-size: 30px;
+    margin-top: -10px;
+    border: 2px solid black;
+    border-radius: 4px;
+    background-color: whitesmoke;
+}
+.tileClicked{
+    background-color: rgb(163, 157, 157);
+}
+.x1{
+    color: blue;
+}
+.x2{
+    color: green;
+}
+.x3{
+    color: red;
+}
+.x4{
+    color:brown;
+}
+.x5{
+    color: black;
+}
+.x6{
+    color: orangered;
+}
+.x7{
+    color: navy;
+}
+.x8{
+    color: cyan;
+}
