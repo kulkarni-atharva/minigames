@@ -1,5 +1,5 @@
 var board = [];
-var minesCount = 5;
+var minesCount = 7;
 var minesLocation = []
 var rows = 8;
 var cols = 8;
@@ -132,6 +132,17 @@ function countAdjMines(r, c){
     mines += checkMine(r + 1, c - 1);
     mines += checkMine(r + 1, c + 1);
 
+    if(mines == 0)
+    {
+        clickAdjTile(r, c - 1);
+        clickAdjTile(r, c + 1);
+        clickAdjTile(r - 1, c);
+        clickAdjTile(r + 1, c);
+        clickAdjTile(r - 1, c - 1);
+        clickAdjTile(r - 1, c + 1);
+        clickAdjTile(r + 1, c - 1);
+        clickAdjTile(r + 1, c + 1);
+    }
     return mines;
 }
 
@@ -150,4 +161,13 @@ function checkGameOver(){
     }
     gameOver = true;
     alert("You Win!");
+}
+function clickAdjTile(r, c){
+    if(r >= rows || c >= rows || r < 0 || c < 0)
+        return;
+    let tile = document.getElementById(r.toString() + "-" + c.toString());
+    if(tile.classList.length != 0)
+        return;
+    document.getElementById(r.toString() + "-" + c.toString()).click();
+
 }
