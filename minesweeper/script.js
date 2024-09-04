@@ -1,5 +1,5 @@
 var board = [];
-var minesCount = 7;
+var minesCount = 10;
 var minesLocation = []
 var rows = 8;
 var cols = 8;
